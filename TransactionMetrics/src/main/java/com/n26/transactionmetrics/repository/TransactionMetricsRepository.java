@@ -15,5 +15,4 @@ import java.util.List;
  */
 public interface TransactionMetricsRepository extends JpaRepository<Transaction, Long> {
 	List<Transaction> findByTimestampIsGreaterThanEqualAndTimestampIsLessThanEqual(Long oldTimeStamp, Long newTimeStamp);
-	Transaction findById(Long id);
 }
